@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/add_house"
+        android:icon="@android:drawable/ic_input_add"
+        android:title="Ajouter une maison" />
+    <item
+        android:id="@+id/retire_house"
+        android:title="Maison retire" />
+    <item
+        android:id="@+id/louer_house"
+        android:title="Maison louer" />
+    <item
+        android:id="@+id/locataire"
+        android:icon="@drawable/guide_delete_sweep_foreground"
+        android:title="Locataire" />
+    <item
+        android:id="@+id/add_guide"
+        android:title="Ajouter des guides" />
+
+</menu>

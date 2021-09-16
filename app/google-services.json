@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "330491475190",
+    "project_id": "rangoappoffice",
+    "storage_bucket": "rangoappoffice.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:330491475190:android:f7ae4a8a54d07261ebe8d7",
+        "android_client_info": {
+          "package_name": "com.example.rangoappoffice"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "330491475190-j7cfulabo57piruunukle7clbugefkm0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJnlhdQnLl6JkzyTbBQOYiRABozvzTQKY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "330491475190-j7cfulabo57piruunukle7clbugefkm0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

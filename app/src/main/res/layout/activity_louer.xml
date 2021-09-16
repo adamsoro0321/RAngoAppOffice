@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.LouerActivity">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/contain_condition"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/condition_louer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/appbar_padding"
+                android:layout_marginRight="@dimen/appbar_padding"
+                android:layout_marginBottom="@dimen/appbar_padding_top"
+                android:gravity="center" />
+
+            <Button
+                android:id="@+id/accept_louer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="j'accepte les conditions" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/contain_pay_btn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="@string/pay_option_tex" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="pay_now"
+            android:text="@string/ligdicash"
+            android:textSize="24sp"
+            app:backgroundTint="@color/ligdicash_colorPrimary" />
+
+        <Button
+            android:id="@+id/pay_by_orang_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Orange Money"
+            android:textSize="24sp"
+            app:backgroundTint="@color/red" />
+    </LinearLayout>
+
+</LinearLayout>

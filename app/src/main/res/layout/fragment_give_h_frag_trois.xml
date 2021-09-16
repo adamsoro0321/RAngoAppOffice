@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.giveHLFragment.GiveHFragTrois">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/cardview_default_elevation">
+
+        <LinearLayout
+            android:id="@+id/contain_spiner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="16dp"
+            android:baselineAligned="false">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="@dimen/nav_header_vertical_spacing">
+
+                <TextView
+                    android:id="@+id/textView23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="categorie de la Maison"
+                    android:textColor="@color/blue"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/spiner_house"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="@dimen/nav_header_vertical_spacing">
+
+                <TextView
+                    android:id="@+id/textView22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/loyer_mensuel"
+                    android:textColor="@color/blue"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/spinner_loyer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/cardview_default_elevation"
+            android:background="@drawable/bar_bacground"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/contain_spiner"
+            tools:layout_editor_absoluteX="37dp">
+
+            <LinearLayout
+                android:id="@+id/add_vent_setting"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/nav_header_vertical_spacing"
+                    android:background="@drawable/side_nav_bar"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/otp_view_item_radius">
+
+                    <TextView
+                        android:id="@+id/title_edit_des"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/otp_view_item_radius"
+                        android:text="Categorie :"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/quinz" />
+
+                    <EditText
+                        android:id="@+id/descripton_categori_vent"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/karante"
+                        android:layout_marginBottom="@dimen/otp_view_item_radius"
+                        android:background="@drawable/bar_bacground"
+                        android:hint="ex:terrain en vente" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/nav_header_vertical_spacing"
+                    android:background="@drawable/side_nav_bar"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/otp_view_item_radius">
+
+                    <TextView
+                        android:id="@+id/title_edi_prise"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/otp_view_item_radius"
+                        android:text="prix de vente"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/quinz" />
+
+                    <EditText
+                        android:id="@+id/descripton_prix_vente"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/karante"
+                        android:layout_marginBottom="@dimen/otp_view_item_radius"
+                        android:background="@drawable/bar_bacground"
+                        android:inputType="number" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/nav_header_vertical_spacing"
+                android:background="@drawable/side_nav_bar"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/otp_view_item_radius">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/otp_view_item_radius"
+                    android:text="@string/ajouter_une_description"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/quinz" />
+
+                <EditText
+                    android:id="@+id/descripton_send"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/karante"
+                    android:layout_marginBottom="@dimen/otp_view_item_radius"
+                    android:background="@drawable/bar_bacground" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/side_nav_bar"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/otp_view_item_radius">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/otp_view_item_radius"
+                    android:text="@string/ajouter_une_adresse"
+                    android:textColor="@color/ic_explore_home2"
+                    android:textSize="@dimen/quinz" />
+
+                <EditText
+                    android:id="@+id/adress_send"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/karante"
+                    android:layout_marginBottom="@dimen/otp_view_item_radius"
+                    android:background="@drawable/bar_bacground"
+                    android:hint="ville ,secteur ,.. " />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/side_nav_bar"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/otp_view_item_radius">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/otp_view_item_radius"
+                    android:text="Lieu indicateur"
+                    android:textColor="@color/ic_explore_home2"
+                    android:textSize="@dimen/quinz" />
+
+                <EditText
+                    android:id="@+id/lieu_indi"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/karante"
+                    android:layout_marginBottom="@dimen/otp_view_item_radius"
+                    android:background="@drawable/bar_bacground"
+                    android:hint="monument ,lieu public... " />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/Btn_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="38dp"
+            android:text="valider" />
+
+
+    </LinearLayout>
+</ScrollView>

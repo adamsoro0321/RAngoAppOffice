@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:padding="@dimen/nav_header_vertical_spacing"
+    app:contentPaddingTop="@dimen/cardview_compat_inset_shadow">
+
+
+    <TextView
+        android:id="@+id/description_categori"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+</androidx.cardview.widget.CardView>

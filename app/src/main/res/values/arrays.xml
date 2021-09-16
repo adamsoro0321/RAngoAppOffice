@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ownerActionOnHouse">
+        <item>Retirer la maison </item>
+        <item>Declarer non disponible</item>
+        <item>Modifier la maison</item>
+        <item>Ajouter ou modifier des paramètres demarcheur</item>
+    </string-array>
+    <string-array name="optionItem">
+        <item>Recuperer et donner en location </item>
+    </string-array>
+</resources>

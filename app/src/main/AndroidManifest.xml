@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.rangoappoffice"
+    android:versionCode="1"
+    android:versionName="1.1.0">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:name="androidx.multidex.MultiDexApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher_rango"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_launcher_rango"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.RAngoAppOffice"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="m">
+        <activity android:name=".activity.ChatBoxActivity" />
+
+        <service
+            android:name=".service.GuideChooseService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".activity.DistactActivity" />
+
+        <service
+            android:name=".service.LoadService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".activity.DynamicLInkActivity">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="www.rangoapp.com"
+                    android:scheme="https" />
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="www.rangoapp.com"
+                    android:scheme="http" />
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="rangoappe.page.link"
+                    android:scheme="http" />
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="rangoappe.page.link"
+                    android:scheme="https" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.login.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.FinalLouerActivity" />
+        <activity android:name=".activity.GlobalChatActivity" />
+        <activity android:name=".activity.HouseDetailActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.MainActivity" />
+        </activity>
+        <activity android:name=".activity.lookAtArroundActivity" />
+        <activity android:name=".activity.showInfoRecieverActivity" />
+        <activity android:name=".activity.HomeActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.MainActivity" />
+        </activity>
+        <activity android:name=".activity.LocataireChatWithGuide" />
+        <activity android:name=".activity.GuideChatActivity" />
+
+        <service
+            android:name=".service.GuideService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity android:name=".activity.CategoriSearchActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.MainActivity" />
+        </activity>
+        <activity android:name=".activity.BusinessActivity" />
+        <activity android:name=".activity.ProfilActivity" />
+        <activity android:name=".activity.GiveLocationHouseActivity" />
+        <activity android:name=".activity.dashboardActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.MainActivity" />
+        </activity>
+        <activity android:name=".activity.visitAvantLouerActivity" />
+        <activity android:name=".activity.LouerActivity" />
+        <activity android:name=".activity.AddHouseCompasant" />
+        <activity android:name=".activity.HouseAdminActivity" />
+        <activity android:name=".activity.SetupActivity" />
+        <activity android:name=".activity.ConfirmLocationActivity" />
+        <activity
+            android:name=".activity.GiveLocationActivity"
+            android:label="@string/title_activity_main2" />
+        <activity
+            android:name=".activity.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.RAngoAppOffice.NoActionBar" />
+    </application>
+
+</manifest>

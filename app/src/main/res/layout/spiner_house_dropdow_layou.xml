@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/otp_view_item_radius"
+    android:layout_marginTop="@dimen/cardview_default_elevation"
+    android:layout_marginBottom="@dimen/cardview_default_radius"
+    android:padding="@dimen/nav_header_vertical_spacing"
+    android:paddingTop="@dimen/cardview_default_elevation"
+    android:paddingBottom="@dimen/cardview_default_elevation">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/img_spiner_drop"
+            android:layout_width="@dimen/activity_vertical_margin"
+            android:layout_height="@dimen/activity_vertical_margin"
+            android:src="@drawable/home" />
+
+        <TextView
+            android:id="@+id/spiner_house_text_drop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/purple_700"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</RelativeLayout>

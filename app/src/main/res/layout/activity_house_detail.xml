@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.HouseDetailActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/tool_bar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|snap|exitUntilCollapsed">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="16dp"
+                app:cardCornerRadius="6dp">
+
+                <ImageView
+                    android:id="@+id/imageSlider"
+                    android:layout_width="350dp"
+                    android:layout_height="200dp"
+                    android:background="@color/white" />
+
+            </androidx.cardview.widget.CardView>
+
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/layou_bg"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/otp_view_item_radius">
+
+                <TextView
+                    android:id="@+id/description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/categori"
+                    android:layout_marginStart="@dimen/otp_view_item_radius"
+                    android:layout_marginTop="@dimen/otp_view_item_radius"
+                    android:layout_marginEnd="@dimen/otp_view_item_radius"
+                    android:layout_marginBottom="@dimen/otp_view_item_radius"
+                    android:padding="@dimen/otp_view_item_radius"
+                    android:text=" " />
+
+                <TextView
+                    android:id="@+id/loyer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="false"
+                    android:layout_margin="@dimen/otp_view_item_radius"
+                    android:layout_marginStart="29dp"
+                    android:padding="@dimen/otp_view_item_radius"
+                    android:text=" "
+                    android:textColor="@color/red1"
+                    android:textSize="22dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/adress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/description"
+                    android:text=" "
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/categori"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:padding="@dimen/otp_view_item_radius"
+                    android:text=" " />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:padding="@dimen/otp_view_item_radius">
+
+                <Button
+                    android:id="@+id/d_louer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:background="@drawable/bottom_navigation_item_design"
+                    android:text="Louer"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/chat_owner"
+                    android:layout_width="@android:dimen/app_icon_size"
+                    android:layout_height="@dimen/fui_min_height_target"
+                    android:visibility="gone"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/chat_icon_foreground" />
+                <Button
+                    android:id="@+id/d_visite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="false"
+                    android:layout_alignParentEnd="false"
+                    android:background="@drawable/bottom_navigation_item_design"
+                    android:text="Visiter"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/otp_view_item_spacing"
+                    android:background="@color/white"
+                    android:padding="@dimen/otp_view_item_radius" />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_marginStart="@dimen/quinz"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="@dimen/appbar_padding_top">
+
+                    <ImageView
+                        android:id="@+id/share_house"
+                        android:layout_width="@dimen/activity_vertical_margin"
+                        android:layout_height="@dimen/activity_vertical_margin"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="start"
+                        android:src="@drawable/share_ic_for_foreground" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/share_house"
+                        android:layout_centerHorizontal="true"
+                        android:text="partager"
+                        android:textColor="@color/grey"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:id="@+id/comment_house"
+                        android:layout_width="@dimen/cinquant"
+                        android:layout_height="@dimen/cinquant"
+                        android:layout_alignParentEnd="true"
+                        android:layout_gravity="start"
+                        android:src="@drawable/insert_comment_foreground" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/comment_house"
+                        android:layout_alignParentEnd="true"
+                        android:text="commentaire"
+                        android:textColor="@color/grey"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:gravity="start"
+                    android:text="Condition"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/caution"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/appbar_padding_top"
+                    android:textColor="@color/red" />
+
+                <TextView
+                    android:id="@+id/contra"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/appbar_padding_top" />
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

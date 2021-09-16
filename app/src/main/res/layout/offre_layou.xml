@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/deux_cent_cinq"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    app:cardCornerRadius="?android:attr/scrollbarSize">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/cond_offre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tarif_offre"
+            android:layout_centerHorizontal="true"
+            android:maxWidth="@dimen/deux_cent_cinq"
+            android:text="tarif_img" />
+
+        <TextView
+            android:id="@+id/tarif_offre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/offre_img"
+            android:layout_centerHorizontal="true"
+            android:maxWidth="@dimen/deux_cent_cinq"
+            android:text="TextView" />
+
+        <ImageView
+            android:id="@+id/offre_img"
+            android:layout_width="@dimen/cent_cinq"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/add_assistant_foreground" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
